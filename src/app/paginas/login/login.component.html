@@ -1,0 +1,33 @@
+<div class="p-grid p-justify-center card">
+    <div class="p-col-10 p-sm-6 p-nd-4">
+        <p-card>
+            <div class="p-grid">
+                <div class="p-col-12 text-center">
+                    <i class="fas fa-users fa-5x" style="color: #007AD9;"></i>
+                    <h2>Sistema</h2>
+                </div>
+                <div class="p-col-12">
+                    <label for="">Usuário:</label>
+                    <input [(ngModel)]="requestLogin.login" class="p-col-12" type="text" pInputText />
+                </div>
+                <div class="p-col-12">
+                    <label for="">Senha:</label>
+                    <input [(ngModel)]="requestLogin.password" 
+                        class="p-col-12" 
+                        type="password" 
+                        pInputText 
+                    />
+                </div>
+                <div class="p-col-12">
+                    <button 
+                        (click)="doLogin()"
+                        pButton 
+                        type="button" 
+                        label="Login" 
+                        class="p-col-12" 
+                    ></button>
+                </div>
+            </div>
+        </p-card>
+    </div>
+</div>
