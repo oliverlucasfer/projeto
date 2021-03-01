@@ -12,6 +12,13 @@ const routes: Routes = [{ path: '', component: LoginComponent },
       (m) => m.PainelModule
     ),
   },
+{
+  path: 'cadastro',
+  loadChildren: () =>
+    import('./paginas/cadastro/cadastro.module').then(
+      (m) => m.CadastroModule
+    ),
+  },
   {path: '**', redirectTo: ''}
 ];
 

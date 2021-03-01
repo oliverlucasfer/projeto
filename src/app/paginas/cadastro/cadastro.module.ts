@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
-import { PainelRoutingModule } from './painel-routing.module';
-import { PainelComponent } from './painel.component';
+import { CadastroRoutingModule } from './cadastro-routing.module';
+import { CadastroComponent } from './cadastro.component';
 
 
 @NgModule({
-  declarations: [PainelComponent],
+  declarations: [CadastroComponent],
   imports: [
     CommonModule,
-    PainelRoutingModule,
+    CadastroRoutingModule,
     CardModule,
     ButtonModule
   ]
 })
-export class PainelModule { }
+export class CadastroModule { }
