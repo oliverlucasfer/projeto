@@ -14,6 +14,7 @@ const routes: Routes = [{ path: '', component: LoginComponent },
   },
 {
   path: 'cadastro',
+  canActivate: [AtenticacaoGuardService],
   loadChildren: () =>
     import('./paginas/cadastro/cadastro.module').then(
       (m) => m.CadastroModule
